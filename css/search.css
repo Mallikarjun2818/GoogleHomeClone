@@ -1,0 +1,133 @@
+.logo-container{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.logo-left{
+    
+    flex: 1;
+}
+
+.google-logo{
+    height: 180;
+    width: 400px;
+    
+}
+.logo-right{
+    
+    flex: 1;
+}
+.search-box{
+    display: flex;
+    background-color: white;
+    margin-right: 350px;
+    margin-left: 350px;
+    height: 50px;
+    border: 1px solid gray;
+    border-radius: 420px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.search-icon{
+    height: 20px;
+    width: 50px;
+    
+}
+ 
+
+.search-input{
+    
+    flex: 1;
+    border: none;
+    outline: none;
+    height: 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-top: 17px;
+    
+    
+}
+
+.voice-search{
+    height: 30px;
+    width: 50px;
+    margin-top: 5px;
+    border: 0;
+    
+
+    
+}
+.camera-icon{
+    height: 35px;
+    width: 40px;
+    margin-left: 5px;
+    margin-right: 15px;
+    margin-top: 8px;
+}
+.voice-search-container,
+.camera-search-container{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+
+}
+    
+
+.voice-search-container .tooltip,
+.camera-search-container .tooltip{
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.15s;
+    padding: 2px;
+    bottom: -30px;
+    border: 1px solid gray;
+    white-space: nowrap;
+    background-color: white;
+    color: black;
+    font-size: 12px;
+
+}
+.voice-search-container:hover .tooltip,
+.camera-search-container:hover .tooltip{
+    
+    opacity: 1;
+}
+@media (max-width:500px){
+    .search-box{
+    display: flex;
+    background-color: white;
+    margin-left: 10px;
+    margin-left: 10px;
+    
+    height: 50px;
+    width: 60%;
+    border: 1px solid gray;
+    border-radius: 200px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.google-logo{
+    margin-left: 100px;
+    margin-right: 20px;
+    height: 100px;
+    width: 200px;
+    
+}
+.logo-left{
+    
+    flex: 0;
+}
+.logo-right{
+    
+    flex: 0;
+}
+
+}
+    
+
